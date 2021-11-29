@@ -1,0 +1,19 @@
+.vertical-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    > li {
+        margin-right: 68px;
+        > a {
+            color: #333;
+            transition: .3s;
+            &:focus,
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+@use '../base/mediaquery' as md;
+
+.header {
+    width: 100%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #fff;
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 94px;
+        @include md.sp {
+            height: 50px;
+        }
+    }
+    @include md.sp {
+        &__nav,
+        .btn {
+            display: none;
+        }
+    };
+}

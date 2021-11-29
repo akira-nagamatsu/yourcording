@@ -1,0 +1,17 @@
+@use '../base/mediaquery' as md;
+
+.section-title {
+    text-align: center;
+    &__main {
+        margin-bottom: 13px;
+        font-size: 3.2rem;
+        line-height: 1.3438;
+        @include md.sp {
+            font-size: 2.8rem;
+        };
+    }
+    &__sub {
+        color: #3BA6C9;
+        line-height: 1.3125;
+    }
+}

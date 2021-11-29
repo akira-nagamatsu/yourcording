@@ -1,0 +1,20 @@
+.contact {
+    padding-top: 65px;
+    padding-bottom: 70px;
+    background: linear-gradient(to right, #05A5FA, #63FBD7);
+    &__section-title {
+        margin-bottom: 39px;
+        color: #fff;
+        .section-title__sub {
+            color: #fff;
+        }
+    }
+    &__checkbox {
+        margin-bottom: 31px;
+    }
+    &__contact-form {
+        max-width: 908px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}

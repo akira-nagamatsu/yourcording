@@ -1,0 +1,37 @@
+.accordion {
+    border: 1px solid #E5E5E5;
+    &__btn {
+        display: block;
+        width: 100%;
+        padding: 19px 35px 20px;
+        border-top: 1px solid #E5E5E5;
+        border-right: none;
+        border-bottom: none;
+        border-left: none;
+        background-color: #fff;
+        font-size: 1.4rem;
+        line-height: 1.8571;
+        text-align: center;
+        cursor: pointer;
+        transition: .3s;
+        &:hover {
+            background-color: #E5E5E5;
+        }
+    }
+    &__title:first-child &__btn {
+        border-top: none;
+    }
+    &__body {
+        display: none;
+        padding: 25px 35px;
+        background-color: #F2F2F2;
+        border-top: 1px solid #E5E5E5;
+        &:first-of-type {
+            display: block;
+        }
+    }
+    &__text {
+        font-size: 1.4rem;
+        line-height: 1.8571;
+    }
+}

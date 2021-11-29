@@ -1,0 +1,64 @@
+@use '../base/mediaquery' as md;
+
+.contact-form {
+    padding: 31px 63px 35px;
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+    @include md.sp {
+        padding-right: 15px;
+        padding-left: 15px;
+    };
+    &__label {
+        display: inline-block;
+        margin-bottom: 36px;
+        line-height: 1.625;
+        &--required {
+            &:after {
+                content: '必須';
+                display: inline-block;
+                width: 60px;
+                height: 30px;
+                margin-left: 32px;
+                background-color: #0C449B;
+                border-radius: 10px;
+                color: #fff;
+                line-height: 30px;
+                text-align: center;
+            }
+        }
+    }
+    &__input {
+        display: block;
+        width: 63.729%;
+        margin-bottom: 25px;
+        padding: 10px 20px;
+        border-radius: 3px;
+        border: none;
+        background-color: #EEFBFB;
+        @include md.sp {
+            width: 100%;
+        };
+    }
+    &__textarea {
+        width: 100%;
+        margin-bottom: 30px;
+        height: 179px;
+        resize: none;
+    }
+    &__submit {
+        border: none;
+        text-align: center;
+        cursor: pointer;
+        &.disable {
+            opacity: .3;
+            cursor: auto;
+        }
+    }
+    &__end-message,
+    &__fail-message {
+        display: none;
+        font-size: 1.8rem;
+        color: #0C449B;
+        text-align: center;
+    }
+}

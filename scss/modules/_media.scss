@@ -1,0 +1,46 @@
+@use '../base/mediaquery' as md;
+
+.media {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include md.sp {
+        display: block;
+        text-align: center;
+    };
+    &__img {
+        padding-right: 15px;
+        flex-shrink: 100;
+        @include md.sp {
+            width: 60%;
+            padding-right: 0;
+            margin-right: auto;
+            margin-left: auto;
+        };
+    }
+    &__body {
+        flex-shrink: 0;
+    }
+    &__title {
+        font-size: 2.4rem;
+        line-height: 2;
+        @include md.sp {
+            font-size: 2rem;
+        };
+    }
+    &__text {
+        line-height: 1.625;
+    }
+    &--row-reverse {
+        flex-direction: row-reverse;
+        .media__img {
+            padding-right: 0;
+        }
+        .media__body {
+            padding-right: 15px;
+            @include md.sp {
+                padding-right: 0;
+            };
+        }
+    }
+}

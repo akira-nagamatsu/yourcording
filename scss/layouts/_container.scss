@@ -1,0 +1,12 @@
+@use '../base/mediaquery' as md;
+
+.container {
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1062px;
+    @include md.l-pc {
+        max-width: 1300px;
+    };
+}

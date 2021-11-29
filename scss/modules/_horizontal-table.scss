@@ -1,0 +1,23 @@
+.horizontal-table {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+    background-color: #fff;
+    &__inner {
+        width: 100%;
+        border-collapse: collapse ;
+    }
+    &__header {
+        width: 31.3175%;
+        padding: 38px 19px;
+        border-right: 1px solid #E5E5E5;
+        border-bottom: 1px solid #E5E5E5;
+        vertical-align: middle;
+    }
+    &__text {
+        padding: 38px 30px;
+        border-bottom: 1px solid #E5E5E5;
+    }
+    &__row:last-child &__header,
+    &__row:last-child &__text {
+        border-bottom-width: 0;
+    }
+}
